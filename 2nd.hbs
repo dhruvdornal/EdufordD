@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SECOND YEAR</title>
+    <link rel="stylesheet" href="2nd.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Poppins&display=swap" rel="stylesheet">
+<link rel="shortcut icon" type="image/png" href="https://o.remove.bg/downloads/cdebd272-4ce2-40a6-a726-a85a81bf34fc/actual_favicon-removebg-preview.png">
+  
+</head>
+<body>
+    <div class="a">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="http://127.0.0.1:2000">HOME</a></li>
+               </ul>
+            </nav>
+        </div>
+
+        <div class="row">
+            <div class="col">
+            <h1>SECOND YEAR</h1>
+            <p>Finally got rid of physics</p>
+        </div>
+        <div class="col">
+            <div class="card card1" onclick="window.location.href='https://youtube.com/playlist?list=PLYwpaL_SFmcAtxMe7ahYC4ZYjQHun_b-T'">
+                <h5 style="color:white">Computer Graphics</h5>
+            </div>
+            <div class="card card2" onclick="window.location.href='https://youtube.com/playlist?list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi'">
+                <h5 style="color:black ;">Data Structure</h5>
+            </div>
+            <div class="card card3" onclick="window.location.href='https://youtube.com/playlist?list=PLU6SqdYcYsfIqgmaQo2ASkw-Eh21xZnJH'">
+                <h5>Maths-3</h5>
+            </div>
+            <div class="card card4" onclick="window.location.href='https://youtube.com/playlist?list=PLU6SqdYcYsfJ27O0dvuMwafS3X8CecqUg'">
+                <h5 style="color:black ;vertical-align:middle";>Discrete Structures</h5>
+            </div>
+
+        </div>
+        
+    </div>
+    </div>
+    <style>
+
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courgette', cursive;
+    font-family: 'Poppins', sans-serif;
+
+}
+.a{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW7QLmshUogHP3CjMVhgVjUsEmJEr_7otJMhU5QYl1JH85mv_b);
+    background-position: center;
+    background-size: cover;
+}
+.navbar{
+    height: 10%;
+    display: flex;
+    align-items:center;
+    padding-left: 2.5%;
+}
+nav{
+    flex: 1;
+    text-align: right;
+    padding-right: 8%;
+    
+}
+nav ul li{
+    list-style:none ;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration:wavy;
+    color: white;
+    font-size: 14;
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+    padding-left: 10%;
+}
+.col{
+    flex-basis: 50%;
+}
+h1{
+    color: white;
+    font-size: 85px;
+}
+p{
+    color: white;
+    font-size:20px;
+    line-height: 15px;
+    font-style: italic;
+}
+h5{
+    color: white;
+    font-style: italic;
+    font-size: 15px;
+    
+    
+}
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card1{
+    background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvi0dFDsIgD5yZo_LPq5nv6t154V1eXD1lsVPJdeIafCedLbBT);
+}
+.card2{
+    background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAeGiCFHs8GUTVfO3t2P3GnVgiITAle2grT_-GFvGWvqPCn00j);
+}
+.card3{  background-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQlOBQCvzD-pKB5EHEFeVeHGGiyBlbCFT1wabGDsCxg763KADKg);
+}
+.card4{
+    background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQEPuk5gKdORFCdGSbxvt1lt3_qXYlkE9_uzCsByXuqzO61YKp);
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+@media only screen and (max-width: 600px) and (min-width:400px){
+    h1{
+        float:inline-start;
+        color: white;
+        font-size: 36px;
+    }
+    p{
+        color: white;
+        font-size:10px;
+        line-height: 10px;
+        font-style: italic;
+    }
+    .card1{
+    width: 150px;
+    height: 130px;
+    display:list-item;
+    border-radius: 5px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvi0dFDsIgD5yZo_LPq5nv6t154V1eXD1lsVPJdeIafCedLbBT);
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    }
+    .card2{
+        width: 150px;
+        height: 130px;
+        display:list-item;
+        border-radius: 5px;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        cursor: pointer;
+        margin: 10px 15px;
+        background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAeGiCFHs8GUTVfO3t2P3GnVgiITAle2grT_-GFvGWvqPCn00j);
+        background-position: center;
+        background-size: cover;
+        transition: transform 0.5s;
+        }
+        .card3{
+            width: 150px;
+            height: 130px;
+            display:list-item;
+            border-radius: 5px;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            cursor: pointer;
+            margin: 10px 15px;
+            background-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQlOBQCvzD-pKB5EHEFeVeHGGiyBlbCFT1wabGDsCxg763KADKg);
+            background-position: center;
+            background-size: cover;
+            transition: transform 0.5s;
+            }
+            .card4{
+                width: 150px;
+                height: 130px;
+                display:list-item;
+                border-radius: 5px;
+                padding: 10px 20px;
+                box-sizing: border-box;
+                cursor: pointer;
+                margin: 10px 15px;
+                background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQEPuk5gKdORFCdGSbxvt1lt3_qXYlkE9_uzCsByXuqzO61YKp);
+                background-position: center;
+                background-size: cover;
+                transition: transform 0.5s;
+                }    
+    h5{
+        color: white;
+        font-style: italic;
+        font-size: 15px;
+    }
+}
+    </style>
+</body>
+</html>

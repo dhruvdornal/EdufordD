@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDUFORD</title>
+    <!--<script src="lol.js"></script>-->
+    <link rel="stylesheet" href="test.css">
+    <link rel="shortcut icon" type="image/png" href="https://o.remove.bg/downloads/cdebd272-4ce2-40a6-a726-a85a81bf34fc/actual_favicon-removebg-preview.png">
+    
+</head>
+    <body>
+    <section class="header">
+      <nav>
+        <a href="http://127.0.0.1:2000"><img src="data:image/jpg;base64,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">
+        <div class="nav-links" id="navbar">
+            <ul>
+                <li><a style="cursor: pointer;" href="http://127.0.0.1:2000">HOME</a></li>
+                <li><a style="cursor: pointer;" href="#sub">SUBJECTS</a></li>
+                <li><a style="cursor: pointer;" href="#courses">COURSES</a></li>
+                <li><a style="cursor: pointer;" href="#e-book">E-BOOKS</a></li>
+                <li><a style="cursor: pointer;" href="#pyq">PYQS</a></li>
+            </ul>
+        </div>
+    </div>
+        </a>
+      </nav> 
+     <!---
+      <div class="text-box">
+        <div class="typing">FREE RESOURCE MATERIAL
+        </div>
+        <p>Can't understand CG, <br> Why worry we got you covered!
+        </p>
+    </div>
+       </div>
+    -->
+
+    <div id="container">
+        <div id="text"></div><div id="cursor"></div>
+    </div>
+
+    <!-- SUBJECTS -->
+    </section>
+    <section class="subject" id="sub">
+        <h2>Subjects We Provide</h2>
+        <div class="row" id="res_sub">
+            <div style="cursor: pointer;"id="se" class="subject-col" onclick="window.location.href='http://127.0.0.1:2000/2nd';">
+                <h3>SECOND YEAR</h3>
+                <p>Engineering Mathematics–II<br>Data Structures & Algorithms<br>Computer Graphics<br>Discrete Maths</p>
+                </div>
+                <div style="cursor: pointer;"class="subject-col" onclick="window.location.href='http://127.0.0.1:2000/3rd';">   
+                <h3>THIRD YEAR</h3>
+                <p>Software Engineering<br>Infotmation Theory & Coding<br>Microprocessor & Interface<br>Operating System</p>
+                </div>  
+                <div style="cursor: pointer;"class="subject-col" onclick="window.location.href='http://127.0.0.1:2000/4th';">
+                <h3>FINAL YEAR</h3>
+                <p>Compiler Construction<br>Data Mining<br>Logic Synthesis<br>Artificial Intelligence</p>
+                </div>
+            </div>
+    </section>
+
+    <!-- COMPUTER LANGS -->
+    <section class="additional" id="courses">
+        <h1>Computer Languages</h1>
+        <p>Mastering a computer language along with studies ain't a bad idea tho!</p>
+        
+        <div class="row">
+            <div class="additional-col">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png">
+                <div id="py" style="cursor: pointer;"class="layer" onclick="window.location.href='https://youtube.com/playlist?list=PLu0W_9lII9agICnT8t4iYVSZ3eykIAOME';">
+                    <h3>PYTHON</h3>
+                </div>
+            </div>
+            <div class="additional-col">
+                <img src="https://raw.githubusercontent.com/isocpp/logos/master/cpp_logo.png">
+                <div id="cpp" style="cursor: pointer;"class="layer" onclick="window.location.href='https://youtube.com/playlist?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ';">
+                    <h3>C++</h3>
+                </div>
+            </div>
+            <div class="additional-col">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png">
+                <div id="js" style="cursor: pointer;"class="layer" onclick="window.location.href='https://youtu.be/jS4aFq5-91M';">
+                    <h3>JS</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- E-BOOKS -->
+    <section class="additional" id="e-book">
+        <h1>E-Books</h1>
+        <p>E-Books less gooo!!</p>
+
+        <div class="row">
+            <div style="cursor: pointer;"class="additional-col" onclick="window.location.href='https://drive.google.com/drive/folders/1lpfR_ApuGNBEF2UbID-AbMQbQCwZeDMN'">
+                <img src="https://img.freepik.com/premium-vector/ebook-logo_497046-138.jpg?w=2000">
+                <div class="layer">
+                    <h3>SECOND YEAR</h3>
+                </div>
+            </div>
+        </div>    
+
+        
+        <div class="row">
+            <div style="cursor: pointer;"class="additional-col" onclick="window.location.href='https://drive.google.com/drive/folders/1lpfR_ApuGNBEF2UbID-AbMQbQCwZeDMN'">
+                <img src="https://img.freepik.com/premium-vector/ebook-logo_497046-138.jpg?w=2000">
+                <div class="layer">
+                    <h3>THIRD YEAR</h3>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="row">
+            <div style="cursor: pointer;"class="additional-col" onclick="window.location.href='https://drive.google.com/drive/folders/1lpfR_ApuGNBEF2UbID-AbMQbQCwZeDMN'">
+                <img src="https://img.freepik.com/premium-vector/ebook-logo_497046-138.jpg?w=2000">
+                <div class="layer">
+                    <h3>FINAL YEAR</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <!-- PYQs -->
+        <section class="pyq" id="pyq">
+            <h1>Previous Year Questions</h1>
+            <p>The below links will provide you PYQs straight from MU of all subjects</p>
+    
+            <div class="pyq-row">
+                <div class="pyq-col">
+                
+                    <img src="https://3.bp.blogspot.com/-cTRFj1rBMZA/Xni2kFQ5NpI/AAAAAAAAw-g/6VDOfeskZLkCwXzNrAHn4d78ZmF1KlzZQCEwYBhgL/s1600/Question-paper-ktu.png">
+                    <div id="py" style="cursor: pointer;"class="layer" onclick="window.location.href='https://muquestionpapers.com/be/computer-engineering/semester-3';">
+                        <h3>SEM-3</h3>
+                    </div>
+                </div><br>
+                <div class="pyq-col">
+                    <img src="https://3.bp.blogspot.com/-cTRFj1rBMZA/Xni2kFQ5NpI/AAAAAAAAw-g/6VDOfeskZLkCwXzNrAHn4d78ZmF1KlzZQCEwYBhgL/s1600/Question-paper-ktu.png">
+                    <div id="cpp" style="cursor: pointer;"class="layer" onclick="window.location.href='https://muquestionpapers.com/be/computer-engineering/semester-5';">
+                        <h3>SEM-5</h3>
+                    </div>
+                </div><br>
+                <div class="pyq-col">
+                    <img src="https://3.bp.blogspot.com/-cTRFj1rBMZA/Xni2kFQ5NpI/AAAAAAAAw-g/6VDOfeskZLkCwXzNrAHn4d78ZmF1KlzZQCEwYBhgL/s1600/Question-paper-ktu.png">
+                    <div id="js" style="cursor: pointer;"class="layer" onclick="window.location.href='https://muquestionpapers.com/be/computer-engineering/semester-7';">
+                        <h3>SEM-7</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Suggestions BOX -->
+<div class="container">
+        <section class="sugg">
+            <form id="suggestion_box" action="/test" method="post">
+            <h3><b>Your valuable Suggestions would be much appreciated</b></h3>
+            <textarea class="msg" name="name" placeholder="Your Suggestions..." tabindex="5" style="height: 156px; width: 409px" ></textarea>
+            <input type="submit"  value="submit" class="sub" style="cursor:pointer; font-weight:bolder; text-transform:uppercase"> 
+      </form>
+        </section>
+</div>
+
+<!--SCRIPT STARTS-->
+          <script>
+            var _CONTENT = [ 
+	"FREE RESOURCE MATERIAL", 
+	"FOR OUR UPCOMING ENGINEERS", 
+	"WHAT IS HOLDING YOU BACK", 
+	"WE HAVE GOT YOU COVERED !!!"
+];
+
+var _PART = 0;
+
+var _PART_INDEX = 0;
+
+var _INTERVAL_VAL;
+
+
+var _ELEMENT = document.querySelector("#text");
+var _CURSOR = document.querySelector("#cursor");
+
+// Implements typing effect
+function Type() { 
+	// Get substring with 1 characater added
+	var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+	_ELEMENT.innerHTML = text;
+	_PART_INDEX++;
+
+	
+	if(text === _CONTENT[_PART]) {
+		
+		_CURSOR.style.display = 'none';
+
+		clearInterval(_INTERVAL_VAL);
+		setTimeout(function() {
+			_INTERVAL_VAL = setInterval(Delete, 50);
+		}, 1000);
+	}
+}
+
+// Implements deleting effect
+function Delete() {
+	var text =  _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+	_ELEMENT.innerHTML = text;
+	_PART_INDEX--;
+
+	
+	if(text === '') {
+		clearInterval(_INTERVAL_VAL);
+
+		// If current sentence was last then display the first one, else move to the next
+		if(_PART == (_CONTENT.length - 1))
+			_PART = 0;
+		else
+			_PART++;
+		
+		_PART_INDEX = 0;
+
+		// Start to display the next sentence after some time
+		setTimeout(function() {
+			_CURSOR.style.display = 'inline-block';
+			_INTERVAL_VAL = setInterval(Type, 100);
+		}, 200);
+	}
+}
+
+// Start the typing effect on load
+_INTERVAL_VAL = setInterval(Type, 100);
+
+
+let docT = document.title;
+window.addEventListener("blur",()=>{
+    document.title = "Come back :(";
+})
+window.addEventListener("focus",()=>{
+    document.title = docT;
+})
+
+
+          </script>
+
+
+
+<!--CSS part-->
+
+  <style>
+            html{
+              scroll-behavior: smooth;
+            }
+            #container {
+	            text-align: center;
+              font-size: 11mm;
+              font-style: bold;
+              font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+#text {
+	display: inline-block;
+	vertical-align: middle;
+	color: white;
+	letter-spacing: 2px;
+}
+
+#cursor {
+	display: inline-block;
+	vertical-align: middle;
+	width: 3px;
+	height: 50px;
+	background-color: white;
+	animation: blink .75s step-end infinite;
+}
+
+@keyframes blink {
+	from, to { 
+		background-color: transparent 
+	}
+	50% { 
+		background-color: white; 
+	}
+}
+
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    scroll-behavior: smooth;
+  }
+  .header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-position:center ;
+    background-size: cover;
+    position: relative;
+  }
+  nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav img{
+    width: 150px;
+  }
+  .nav-links{
+    flex: 1;
+    text-align: right;
+  }
+  .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  .nav-links ul li a{
+    color: azure;
+    text-decoration: none;
+    font-size: 13px;
+  }
+  .text-box{    
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+  .text-box h1{
+    font-size: 62 px;
+  }
+  .text-box {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+  
+  .typing {
+    width: 22ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+  
+  /* Subjects */
+  .subject{
+    width: 86%;
+    margin: 1.3in;
+    text-align: center;
+  }
+  h1{
+    font-size: 30px;
+  }
+
+  .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content:space-around;
+    gap: 100px;
+  }
+  .subject-col{
+    flex-basis: 31%;
+    background-color:#fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20 px 12px;
+    box-sizing: border-box;
+    transition: 0.5s
+  }
+  h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10 px 0;
+  
+  }
+  .subject-col:hover{
+    box-shadow:0 0 20px 0px rgba(0,0,0,0.2);
+  }
+  
+  /* Additional courses (python c++ js) */
+  .additional{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50 px;
+  }
+  .additional-col{
+    flex-basis: 32%;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    position: relative;
+    overflow:hidden ;
+  }
+  .additional-col img{
+    width: 100%;
+  }
+  .layer{
+    background: transparent;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+  }
+  .layer:hover{
+    background: rgba(226,0,0,0.7);
+  }
+  .layer h3{
+    width: 100%;
+    font-weight: 500;
+    color:white ;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+  }
+  .tt{
+    margin: 100px auto;
+    width: 80%;
+    background-image:linear-gradient()
+    gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/banner2.jpg);
+  }
+  /*PYQ style*/
+  .pyq{
+    text-align: center;
+  }
+  .pyq-row{
+    width: 20%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60 px;
+  }
+  .pyq-col{
+    flex-basis: 32%;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    position: relative;
+    overflow:hidden ;
+  }
+  .pyq-col img{
+    width: 100%;
+  }
+  .layer{
+    background: transparent;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+  }
+  .layer:hover{
+    background: rgba(226,0,0,0.7);
+  }
+  .layer h3{
+    width: 100%;
+    font-weight: 500;
+    color:white ;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+  }
+
+.container {
+	max-width:400px;
+	width:100%;
+	margin:0 auto;
+	position:48%;
+}
+.sugg{
+  border: rgb(117, 239, 119);
+  border-radius: 2%;
+  border-bottom: rgb(137, 223, 130);
+}
+
+#name{
+  background:#F9F9F9;
+	padding:25px;
+	margin:50px 0;
+}
+  textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+  .sub{
+    position: relative;
+    display: flex;
+    padding: 10px 25px;
+    text-align: center;
+    flex-direction: column;
+    color: black;
+	  background-color: $black;
+	  border: 5px solid transparent;
+	  transition: .2s ease;
+	  border-radius: 50px;
+    font-size:16px;
+    float: right;
+  }
+  .sub:hover{
+    color: $blue;
+	  background-color: lightgreen;
+	  transform: scale(1.1);
+	  border: 5px solid $blue;
+  }
+
+
+/*Responsive wala part*/
+  @media only screen and (max-width: 600px){
+    /* Subjects ka responsive*/
+  
+  .subject h2{
+    text-align:left;
+    font-size: 26px;
+  }
+  #res_sub{
+    width: 60%;
+    margin-top: 5%;
+    display: block;
+    justify-content:space-around;
+    gap: 100px;
+  }
+  .subject-col{
+    width: 50%;
+    flex-basis: 20%;
+    background-color:#fff3f3;
+    border-radius: 8px;
+    margin-bottom: 5%;
+    padding: 10 px 6px;
+    box-sizing: border-box;
+    transition: 0.5s
+  }
+  h3{
+    text-align: center;
+    font-weight: 400;
+    margin: 7 px 0;
+  }
+/*Additional courses (js c++ python wala part)*/
+  .additional{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60 px;
+  }
+  .additional-col{
+    flex-basis: 60%;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    position: relative;
+    overflow:hidden ;
+  }
+  /*PYQ ka responsive*/
+    .pyq-row{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 90 px;
+  }
+  .pyq-col{
+    flex-basis: 60%;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    position:initial;
+    overflow:hidden ;
+   }
+   .layer{
+    background: transparent;
+    height:120%;
+    width: 120%;
+    position:fixed;
+    top: 5;
+    left: 5;
+    transition: 0.5s;
+  }
+}
+    
+  
+          </style>
+<!-- CSS ends -->
+
+</body>
+</html>

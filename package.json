@@ -1,0 +1,22 @@
+{
+  "name": "testedu",
+  "version": "1.0.0",
+  "description": "testing proj",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dhruv",
+  "license": "ISC",
+  "dependencies": {
+    "alert": "^5.1.3",
+    "express": "^4.18.2",
+    "hbs": "^4.2.0",
+    "http": "^0.0.1-security",
+    "mongoose": "^6.8.3",
+    "popups": "^1.1.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

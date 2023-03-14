@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FINAL YEAR</title>
+    <link rel="stylesheet" href="4th.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Poppins&display=swap" rel="stylesheet">
+<link rel="shortcut icon" type="image/png" href="https://o.remove.bg/downloads/cdebd272-4ce2-40a6-a726-a85a81bf34fc/actual_favicon-removebg-preview.png">
+    
+</head>
+<body>
+    <div class="a">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="http://127.0.0.1:2000">HOME</a></li>
+               </ul>
+            </nav>
+        </div>
+
+        <div class="row">
+            <div class="col">
+            <h1>FINAL YEAR</h1>
+            <p>Enjoy your last year to the fullest!!</p>
+        </div>
+        <div class="col">
+            <div class="card card1" onclick="window.location.href='https://youtube.com/playlist?list=PLxCzCOWd7aiEKtKSIHYusizkESC42diyc'">
+                <span style="color:black">Compiler</span>
+                <span style="color:white">Construction</span>
+            </div>
+            <div class="card card2" onclick="window.location.href='https://youtube.com/playlist?list=PLYwpaL_SFmcChP0xiW3KK9elNuhfCLVVi'">
+                <h5 style="color:white ;">Data Mining<br>Warehouse</h5>
+            </div>
+            <div class="card card3" onclick="window.location.href='https://youtube.com/playlist?list=PLYwpaL_SFmcChP0xiW3KK9elNuhfCLVVi'">
+                <h5 style="color: black;"><b>Logic Synthesis</b></h5>
+            </div>
+            <div class="card card4" onclick="window.location.href='https://youtube.com/playlist?list=PLxCzCOWd7aiHGhOHV-nwb0HR5US5GFKFI'">
+                <h5 style="color:black ;";>Artificial Intelligence</h5>
+            </div>
+
+        </div>
+        
+    </div>
+    </div>
+
+<style>
+
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courgette', cursive;
+    font-family: 'Poppins', sans-serif;
+
+}
+.a{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW7QLmshUogHP3CjMVhgVjUsEmJEr_7otJMhU5QYl1JH85mv_b);
+    background-position: center;
+    background-size: cover;
+}
+.navbar{
+    height: 10%;
+    display: flex;
+    align-items:center;
+    padding-left: 2.5%;
+}
+nav{
+    flex: 1;
+    text-align: right;
+    padding-right: 8%;
+    
+}
+nav ul li{
+    list-style:none ;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration:wavy;
+    color: white;
+    font-size: 14;
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+    padding-left: 10%;
+}
+.col{
+    flex-basis: 50%;
+}
+h1{
+    color: white;
+    font-size: 85px;
+}
+p{
+    color: white;
+    font-size:20px;
+    line-height: 15px;
+    font-style: italic;
+
+
+}
+h5{
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+    
+    
+}
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url(images/basketball.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card1{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY5S75SOd6dwlqiivXmDFKmSZSFnW6dzfyPCj2y5aNrUIXJpRs);
+}
+.card2{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9gywFQAZrnhPLbu9NL0Me17ZJxzAe0fAocZHHv6Iu3XA37VW1);
+}
+.card3{  background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQCvgRovByj-SBOJ8OBbx24sTDLODnSTQKouIdGodktxteFfpnY);
+    
+}
+.card4{
+    background-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZUcoD0Bv6xlj0XCsiDruSHfH6MHE7lCJmL7CgBsNGxgjIc9kf);
+
+}
+.card:hover{
+    transform: translateY(-10px);
+
+}
+.layer{
+  background: transparent;
+  height:100%;
+  width: 100%;
+  position:fixed;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.layer:hover{
+  background: rgba(226,0,0,0.7);
+}
+
+@media only screen and (max-width: 600px) and (min-width:400px){
+    h1{
+        float:inline-start;
+        color: white;
+        font-size: 36px;
+    }
+    p{
+        color: white;
+        font-size:10px;
+        line-height: 10px;
+        font-style: italic;
+    }
+    .card1{
+    width: 150px;
+    height: 130px;
+    display:list-item;
+    border-radius: 5px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY5S75SOd6dwlqiivXmDFKmSZSFnW6dzfyPCj2y5aNrUIXJpRs);
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    }
+    .card2{
+        width: 150px;
+        height: 130px;
+        display:list-item;
+        border-radius: 5px;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        cursor: pointer;
+        margin: 10px 15px;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9gywFQAZrnhPLbu9NL0Me17ZJxzAe0fAocZHHv6Iu3XA37VW1);
+        background-position: center;
+        background-size: cover;
+        transition: transform 0.5s;
+        }
+        .card3{
+            width: 150px;
+            height: 130px;
+            display:list-item;
+            border-radius: 5px;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            cursor: pointer;
+            margin: 10px 15px;
+            background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQCvgRovByj-SBOJ8OBbx24sTDLODnSTQKouIdGodktxteFfpnY);
+            background-position: center;
+            background-size: cover;
+            transition: transform 0.5s;
+            }
+            .card4{
+                width: 150px;
+                height: 130px;
+                display:list-item;
+                border-radius: 5px;
+                padding: 10px 20px;
+                box-sizing: border-box;
+                cursor: pointer;
+                margin: 10px 15px;
+                background-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZUcoD0Bv6xlj0XCsiDruSHfH6MHE7lCJmL7CgBsNGxgjIc9kf);
+                background-position: center;
+                background-size: cover;
+                transition: transform 0.5s;
+                }    
+    h5{
+        color: white;
+        font-style: italic;
+        font-size: 15px;
+    }
+}
+
+</style>
+    
+</body>
+</html>
